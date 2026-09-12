@@ -179,7 +179,7 @@
         }
 
         // Kích nổ khi click chuột
-        window.addEventListener('click', (e) => {
+        window.addEventListener('pointerdown', (e) => {
             for (let i = 0; i < 3; i++) {
                 particles.push(new AtomicParticle(e.clientX, e.clientY));
             }
